@@ -51,8 +51,8 @@ int main(void) {
         furi_hal_light_sequence("rgb BR");
         // Do update
         flipper_boot_update_exec();
-        // if things go nice, we shouldn't reach this point.
-        // But if we do, abandon to avoid bootloops
+        // If update succeeds, we shouldn't reach this point.
+        // If we do, abandon to avoid bootloops
         furi_hal_rtc_set_boot_mode(FuriHalRtcBootModeNormal);
         furi_hal_power_reset();
     } else if(!furi_hal_gpio_read(&gpio_button_up)) {

@@ -33,9 +33,7 @@
         "update_util",
         "heatshrink",
         "flipperformat",
-        "flipper18",
         "bit_lib",
-        "toolbox",
         "datetime",
         "ieee754_parse_wrap"
     ],
